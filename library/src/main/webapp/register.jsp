@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/add_product.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 
 <body>
@@ -40,22 +42,22 @@
         <%--@declare id=""--%>
         <div class="inputContainer">
             <input type="text" class="input" placeholder="a" name="firstName" id="firstName" required>
-            <label for="" class="label">Email</label>
+            <label for="" class="label">First Name</label>
         </div>
 
         <div class="inputContainer">
             <input type="text" class="input" placeholder="a" name="lastName" id="lastName" required>
-            <label for=""  class="label">Username</label>
+            <label for=""  class="label">Last Name</label>
         </div>
 
         <div class="inputContainer">
             <input type="email" class="input" placeholder="a" name="email" id="email" required>
-            <label for="" class="label">Password</label>
+            <label for="" class="label">Email</label>
         </div>
 
         <div class="inputContainer">
             <input type="password" class="input" placeholder="a" name="password" id="password" required>
-            <label for="" class="label">Confirm Password</label>
+            <label for="" class="label">Password</label>
         </div>
         <input type="submit" class="submitBtn" name="submit" value="Sign up">
     </form>

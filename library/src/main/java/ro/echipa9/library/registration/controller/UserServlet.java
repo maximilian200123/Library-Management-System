@@ -1,5 +1,6 @@
 package ro.echipa9.library.registration.controller;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -50,5 +51,9 @@ public class UserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        // !!!!!!! IMPORTANT !!!!!!!!
+        //instancing an RequestDispatcher object to forward us to the requested page
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/register.jsp");
+        dispatcher.forward(request,response);
     }
 }
