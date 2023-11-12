@@ -39,7 +39,7 @@
 
         <%--@declare id=""--%>
         <div class="inputContainer">
-            <input type="email" class="input" placeholder="a" name="firstName" id="firstName" required>
+            <input type="text" class="input" placeholder="a" name="firstName" id="firstName" required>
             <label for="" class="label">Email</label>
         </div>
 
@@ -49,7 +49,7 @@
         </div>
 
         <div class="inputContainer">
-            <input type="password" class="input" placeholder="a" name="email" id="email" required>
+            <input type="email" class="input" placeholder="a" name="email" id="email" required>
             <label for="" class="label">Password</label>
         </div>
 
