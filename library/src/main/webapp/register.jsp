@@ -18,11 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/signup.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/products.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/add_product.css">
+    <link rel="stylesheet" href="CSS/signup.css">
     <link rel="stylesheet" href="CSS/style.css">
 
 </head>
@@ -37,29 +33,29 @@
 
 <div class="signupFrm">
     <form action="<%=request.getContextPath()%>/register" method="post" class="form">
-        <h1 class="title">Sign up</h1>
+        <h1 class="title">Inregistrare</h1>
 
         <%--@declare id=""--%>
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" name="firstName" id="firstName" required>
-            <label for="" class="label">First Name</label>
+            <input type="text" class="input" placeholder="a" name="firstName" id="firstName" required><br>
+            <label for="" class="label">Prenume</label>
         </div>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" name="lastName" id="lastName" required>
-            <label for=""  class="label">Last Name</label>
+            <input type="text" class="input" placeholder="a" name="lastName" id="lastName" required><br>
+            <label for=""  class="label">Nume</label>
         </div>
 
         <div class="inputContainer">
-            <input type="email" class="input" placeholder="a" name="email" id="email" required>
+            <input type="email" class="input" placeholder="a" name="email" id="email" required><br>
             <label for="" class="label">Email</label>
         </div>
 
         <div class="inputContainer">
-            <input type="password" class="input" placeholder="a" name="password" id="password" required>
-            <label for="" class="label">Password</label>
+            <input type="password" class="input" placeholder="a" name="password" id="password" required><br>
+            <label for="" class="label">Parola</label>
         </div>
-        <input type="submit" class="submitBtn" name="submit" value="Sign up">
+        <input type="submit" class="submitBtn" name="submit" value="Inregistrare">
     </form>
 </div>
 </body>
