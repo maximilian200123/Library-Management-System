@@ -11,22 +11,22 @@ public class UserDao {
     //function that creates a DB entry
     public int registerUser(User user) throws ClassNotFoundException{
         String INSERT_USERS_SQL = "INSERT INTO users" +
-                "(first_name,last_name,email,password) VALUES" +
-                "(?,?,?,?);";
+                "(id, first_name,last_name,email,password) VALUES" +
+                "(?,?,?,?,?);";
 
         int result = 0;
 
         Class.forName("com.mysql.jdbc.Driver");
 
         //creating a sql connection to the database
-        try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/users?useSSL=false","root","");
+        try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/library?useSSL=false","root","root");
 
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)){
-
-                preparedStatement.setString(1,user.getFirstName());
-                preparedStatement.setString(2, user.getLastName());
-                preparedStatement.setString(3, user.getEmail());
-                preparedStatement.setString(4, user.getPassword());
+                preparedStatement.setInt(1,1);
+                preparedStatement.setString(2, user.getFirstName());
+                preparedStatement.setString(3, user.getLastName());
+                preparedStatement.setString(4, user.getEmail());
+                preparedStatement.setString(5, user.getPassword());
 
                 System.out.println(preparedStatement);
 
