@@ -45,7 +45,7 @@ public class UserServlet extends HttpServlet {
         }
 
         //redirecting the user to another page if the entry is successfully created
-        response.sendRedirect("userDetails.jsp");
+        response.sendRedirect("register-successful.jsp");
     }
 
     @Override

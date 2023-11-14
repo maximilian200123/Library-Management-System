@@ -37,23 +37,23 @@
 
         <%--@declare id=""--%>
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" name="firstName" id="firstName" required><br>
-            <label for="" class="label">Prenume</label>
+            <input type="text" class="input" placeholder="Prenume" name="firstName" id="firstName" required><br>
+            <label for="firstName" class="label">Prenume</label>
         </div>
 
         <div class="inputContainer">
-            <input type="text" class="input" placeholder="a" name="lastName" id="lastName" required><br>
-            <label for=""  class="label">Nume</label>
+            <input type="text" class="input" placeholder="Nume" name="lastName" id="lastName" required><br>
+            <label for="lastName"  class="label">Nume</label>
         </div>
 
         <div class="inputContainer">
-            <input type="email" class="input" placeholder="a" name="email" id="email" required><br>
-            <label for="" class="label">Email</label>
+            <input type="email" class="input" placeholder="Email" name="email" id="email" required><br>
+            <label for="email" class="label">Email</label>
         </div>
 
         <div class="inputContainer">
-            <input type="password" class="input" placeholder="a" name="password" id="password" required><br>
-            <label for="" class="label">Parola</label>
+            <input type="password" class="input" placeholder="Parola" name="password" id="password" required><br>
+            <label for="password" class="label">Parola</label>
         </div>
         <input type="submit" class="submitBtn" name="submit" value="Inregistrare">
     </form>
